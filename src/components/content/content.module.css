@@ -1,0 +1,5 @@
+.nothing {
+  margin-top: var(--size-2xml);
+  display: block;
+  font-size: var(--size-2xml);
+}

@@ -1,0 +1,14 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./normalize.css";
+
+html {
+  font-size: var(--root-percent);
+}
+
+body {
+  color: var(--color-base-primary);
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  background-color: var(--color-base-dark);
+}
