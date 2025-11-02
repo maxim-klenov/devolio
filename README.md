@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# ⚡ Портфолио | Максим Клёнов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/851a42e0-db58-43ea-afff-b89476288be5/deploy-status)](https://app.netlify.com/projects/dsdeg/deploys)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Open Source](https://img.shields.io/badge/Open_Source-blue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Я решил открыть исходный код своего последнего веб-сайт-портфолио! Главное отличие в том, что теперь он собирается новейшим бандлером на Rust и задеплойен на платформе Netlify!
 
-## React Compiler
+Не стесняйтесь использовать этот репозиторий для создания своего собственного портфолио, и если вам понравился репозиторий, поддержите его, поставив звездочку ⭐!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**[Открыть сайт 🡕](https://dsdeg.netlify.app)**
 
-## Expanding the ESLint configuration
+## 🚀 Быстрый старт
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Следуйте этим двум шагам, чтобы запустить проект локально:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Склонируйте репозиторий с помощью `git clone` или сделайте [Fork](https://docs.github.com/ru/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Установите зависимости командой `npm i`, а затем запустите командой `npm run dev`**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Готово! Браузер откроет страницу по адресу `http://localhost:5173`**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Что по технологиям:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** - библиотека для создания пользовательских интерфейсов
+- **Vite** - сборщик проекта
+- **TypeScript** - типизированный JavaScript
+- **Netlify** - хостинг и деплой
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Скрипты
+
+- `npm run dev` - запуск сервера разработки
+- `npm run lint` - проверка на ошибки в коде 
+- `npm run build` - сборка проекта для продакшена
+- `npm run preview` - предпросмотр собранного проекта
+
+## 📄 Лицензия
+
+Этот проект распространяется под лицензией [MIT](LICENSE/).
+
+
+<br>
+<div align="center">
+
+## 💬 Есть вопросы?  
+
+
+Свяжитесь со мной через любое из этих средств:
+  
+  <a href="https://github.com/maxim-klenov" target="_blank" rel="noopener noreferrer">
+    <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+  </a>
+  <a href="mailto:maxklenow@gmail.com" target="_blank" rel="noopener noreferrer">
+   <img src="https://img.shields.io/badge/Gmail-white?style=for-the-badge&logo=gmail&logoColor=D14836" alt="gmail" />
+  </a>
+</div>
