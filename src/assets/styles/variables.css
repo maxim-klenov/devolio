@@ -1,30 +1,34 @@
 :root {
   /* Derived from --color-base-primary (#cccccc) */
-  --color-primary-0: hsl(from var(--color-base-primary) 0 0% 95%);
+  /* --color-primary-0: hsl(from var(--color-base-primary) 0 0% 95%);
   --color-primary-100: hsl(from var(--color-base-primary) 0 0% 80%);
   --color-primary-200: hsl(from var(--color-base-primary) 0 0% 65%);
   --color-primary-300: hsl(from var(--color-base-primary) 0 0% 50%);
   --color-primary-400: hsl(from var(--color-base-primary) 0 0% 40%);
   --color-primary-500: hsl(from var(--color-base-primary) 0 0% 30%);
-  --color-primary-600: hsl(from var(--color-base-primary) 0 0% 20%);
+  --color-primary-600: hsl(from var(--color-base-primary) 0 0% 20%); */
 
   /* Derived from --color-base-dark (#1a1a1a) */
-  --color-dark-0: hsl(from var(--color-base-dark) 0 0% 90%);
+  /* --color-dark-0: hsl(from var(--color-base-dark) 0 0% 90%);
   --color-dark-100: hsl(from var(--color-base-dark) 0 0% 75%);
   --color-dark-200: hsl(from var(--color-base-dark) 0 0% 60%);
   --color-dark-300: hsl(from var(--color-base-dark) 0 0% 45%);
   --color-dark-400: hsl(from var(--color-base-dark) 0 0% 30%);
   --color-dark-500: hsl(from var(--color-base-dark) 0 0% 20%);
-  --color-dark-600: hsl(from var(--color-base-dark) 0 0% 10%);
+  --color-dark-600: hsl(from var(--color-base-dark) 0 0% 10%); */
 
-  --color-base-primary: #cccccc;
-  --color-base-dark: #1a1a1a;
+  --color-light: #faf2ef;
+  --color-light-100: hsl(from var(--color-light) 0 0% 70%);
+  --color-dark: #23202b;
+  --color-primary: rgb(255, 255, 0);
+  --color-secondary: #7746e0;
+  --color-secondary-100: hsl(from var(--color-secondary) h s l/0.9); /* header button */
 
   --font-family-base: "roboto", sans-serif;
   --font-weight-base: 400;
   --font-weight-semibold: 600;
   --root-percent: 62.5%;
-  --layout-container: 570px;
+  --layout-container: 1440px;
   /* --box-shadow-base: 2px 2px 4px 0px #00000033;  */
   --z-index-base: 0;
   --z-index-overflow: 10;
