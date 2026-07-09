@@ -1,6 +1,26 @@
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+
+  & > * {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+.list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  column-gap: 35px;
+}
+/*
+.header {
   position: sticky;
-  top: 0;
+  top: 80px;
   left: 0;
   height: 64px;
   width: 100%;
@@ -40,9 +60,6 @@
   }
 }
 
-.menu-button {
-}
-
 .mail {
   padding: 8px 24px;
   background-color: var(--color-primary);
@@ -51,3 +68,4 @@
   font-size: 14px;
   text-decoration: unset;
 }
+*/

@@ -1,21 +1,28 @@
-import { useState } from "react";
+// import { useState } from "react";
 // import NavMenuButton from "@/components/ui/navMenuButton/NavMenuButton";
 import styles from "./header.module.css";
 // import HamburgerIcon from "@/components/ui/hamburgerIcon/HamburgerIcon";
 
 const Header = () => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return ( 
     <header className={styles.header}>
 
         {/* <NavMenuButton className={styles["menu-button"]} isActive={isMenuOpen} onClick={() => {setIsMenuOpen(!isMenuOpen)}}> */}
-          <span>Menu</span>
+          <span>Главная</span>
+          <nav>
+            <ul className={styles.list}>
+              <li><a href="#">Опыт и достижения</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Для связи</a></li>
+            </ul>
+          </nav>
           {/* <HamburgerIcon isActive={isMenuOpen} /> */}
         {/* </NavMenuButton> */}
 
-        <a href="mailto:maxklenow@gmail.com" className={styles["mail"]}>maxklenow@gmail.com</a>
+        {/* <a href="mailto:maxklenow@gmail.com" className={styles["mail"]}>maxklenow@gmail.com</a> */}
     </header>
    );
 }
