@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import netlify from "@netlify/vite-plugin";
 import path from 'path';
 import { fileURLToPath } from 'url'
 
@@ -13,5 +12,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  plugins: [react(), netlify()]
+  plugins: [react()]
 });

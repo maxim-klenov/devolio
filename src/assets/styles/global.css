@@ -12,3 +12,11 @@ body {
   font-weight: 400;
   background-color: var(--color-dark);
 }
+
+.heading-1 {
+  font-size: 7.2rem;
+}
+
+.heading-3 {
+  font-size: 3.6rem;
+}
