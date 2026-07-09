@@ -1,3 +1,4 @@
+/**
 @font-face {
   font-family: "roboto";
   src: url("/src/assets/fonts/roboto-regular.woff2") format("woff2"),
@@ -16,11 +17,4 @@
   font-display: swap;
 }
 
-/* @font-face {
-  font-family: "viaoda libre";
-  src: url("/src/assets/fonts/viodalalibre-regular.woff2") format("woff2"),
-    url("/src/assets/fonts/viodalalibre-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-} */
+*/

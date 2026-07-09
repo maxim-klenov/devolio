@@ -1,7 +1,8 @@
-import clsx from "clsx";
+/**
+ import clsx from "clsx";
 import styles from "./projects.module.css";
 
-/**
+
 interface Project {
   id: number;
   imageSrc: string;
@@ -15,7 +16,7 @@ interface Project {
 interface ProjectsProps {
   projects: Project[];
 }
-*/
+
  
 const Projects = ({ projects }) => {
   return ( 
@@ -23,7 +24,6 @@ const Projects = ({ projects }) => {
       
       {projects.map((project) => (
        <div className={styles.project} key={project.id}>
-          {/* <img src={`@assets/images/${project.imageSrc}`} /> */}
           <img className={styles.preview} src={`/src/assets/images/${project.imageSrc}`} alt={project.name} />
           <div>
             <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
@@ -41,3 +41,5 @@ const Projects = ({ projects }) => {
 }
  
 export default Projects;
+
+*/
