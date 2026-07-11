@@ -7,6 +7,21 @@
   padding-inline: 14rem;
 }
 
+.suptext {
+  display: block;
+  /* align-items: center; */
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+  padding-left: 50%;
+
+  font-size: 1.6rem;
+  color: var(--color-light-100);
+  /* text-align: end; */
+  text-wrap: balance;
+  /* letter-spacing: 0.8px; */
+  font-weight: 400;
+}
+
 .heading {
   display: block;
   max-width: 90%;
@@ -21,19 +36,4 @@
   & span {
     color: var(--color-secondary);
   }
-}
-
-.subtext {
-  display: block;
-  /* align-items: center; */
-  justify-content: flex-end;
-  margin-bottom: 5rem;
-  padding-left: 50%;
-
-  font-size: 1.6rem;
-  color: var(--color-light-100);
-  /* text-align: end; */
-  text-wrap: balance;
-  /* letter-spacing: 0.8px; */
-  font-weight: 400;
 }

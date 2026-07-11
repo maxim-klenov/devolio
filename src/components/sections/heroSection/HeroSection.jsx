@@ -1,17 +1,24 @@
 // import ScrollContainer from "@/components/ui/scrollContainer/ScrollContainer";
+import Icon from "@/components/icon/Icon";
+
 import styles from "./heroSection.module.css";
+import heroWebp from '@/assets/images/hero-image.webp';
+import heroJpg from '@/assets/images/hero-image.jpg';
 
 const HeroSection = () => {
   return ( 
     <>
-    <div className={styles.intro}> 
-      <h1 className={styles.heading}>Building Interfaces for <span>Humans,</span> not just <span>screens.</span></h1>
-      {/* Interfaces */}
-      <div className={styles.subtext}>   
-        <p>I’m Maxim, a frontend developer specializing in building responsive, high-performance web applications with React and TypeScript. My focus is on clean, maintainable code and exceptional user experiences—evidenced by consistent Lighthouse Performance scores of 97+......</p>
-        <p>For me, frontend development isn’t just about writing code — it’s about solving real problems with empathy, precision, and a relentless commitment to quality.</p>
+      <div className={styles.intro}> 
+        <sup className={styles.suptext}>Привет, привет!</sup>
+        <h1 className={styles.heading}>Это - кратенькое портфолио Jamstack-разработчика</h1>
+
+        <picture className={styles.hero}>
+          <source srcSet={heroWebp}></source>
+          <img src={heroJpg} alt="улыбающийся мальчик сидит за компьютером и машет рукой" width={388} height={388}/>
+        </picture>
       </div>
-    </div>
+
+      <Icon name="arrow-down" width={100} height={100}/>
     {/* <ScrollContainer /> */}
     </>
    );
