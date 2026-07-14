@@ -10,7 +10,7 @@ interface ArrowProps extends React.SVGProps<SVGSVGElement> {
 } 
 */
 
-const ArrowDown = ({ color, width, height, ariaHidden, ariaLabel, ...props }) => {
+const ArrowDownIcon = ({ color, width, height, ariaHidden, ariaLabel, ...props }) => {
   return ( 
     <svg
       width={width}
@@ -30,4 +30,4 @@ const ArrowDown = ({ color, width, height, ariaHidden, ariaLabel, ...props }) =>
    );
 }
  
-export default ArrowDown;
+export default ArrowDownIcon;

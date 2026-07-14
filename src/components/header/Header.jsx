@@ -11,14 +11,13 @@ const Header = () => {
     <header className={styles.header}>
 
         {/* <NavMenuButton className={styles["menu-button"]} isActive={isMenuOpen} onClick={() => {setIsMenuOpen(!isMenuOpen)}}> */}
-          <span>Главная</span>
           <nav>
-            <ul className={styles.list}>
-              <li><a href="#">Опыт и достижения</a></li>
-              <li><a href="#">Проекты</a></li>
-              <li><a href="#">Для связи</a></li>
-            </ul>
+            <span>Главная</span>
           </nav>
+          <ul className={styles.list}>
+            <li><a href="#">Опыт и достижения</a></li>
+            <li><a href="#">Спонсировать новый проект</a></li>
+          </ul>
           {/* <HamburgerIcon isActive={isMenuOpen} /> */}
         {/* </NavMenuButton> */}
 

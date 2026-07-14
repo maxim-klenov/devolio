@@ -1,4 +1,6 @@
-import ArrowDown from "./icons/ArrowDown";
+import ArrowDownIcon from "./icons/ArrowDownIcon";
+import ArrowSideIcon from './icons/ArrowSideIcon';
+import ProjectIcon from './icons/ProjectIcon';
 
 /** 
  interface IconProps {
@@ -27,10 +29,12 @@ type IconComponentMap = {
 
 // :IconComponentMap
 const icons = {
-  'arrow-down': ArrowDown
+  'arrow-down': ArrowDownIcon,
+  'arrow-side': ArrowSideIcon,
+  'project': ProjectIcon
 }
 
-const Icon = ({ name, color = "black", width = 10, height = 10, ariaLabel, ariaHidden, ...props }) => {
+const Icon = ({ name, color = "black", width = 50, height = 50, ariaLabel, ariaHidden, ...props }) => {
   if (ariaLabel == null) ariaHidden = true;
 
   const IconComponent = icons[name];
