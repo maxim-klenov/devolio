@@ -1,7 +1,7 @@
-/**
- import clsx from "clsx";
+import clsx from "clsx";
 import styles from "./projects.module.css";
 
+/**
 
 interface Project {
   id: number;
@@ -17,29 +17,39 @@ interface ProjectsProps {
   projects: Project[];
 }
 
+*/
  
 const Projects = ({ projects }) => {
+  const top3projects = projects.slice(0, 3);
+
   return ( 
-    <div className={styles.projects}>
-      
-      {projects.map((project) => (
-       <div className={styles.project} key={project.id}>
-          <img className={styles.preview} src={`/src/assets/images/${project.imageSrc}`} alt={project.name} />
+    <section id="projects-section" className={clsx("section", styles.projects)}>
+      <h2 className="heading-2">Проекты</h2>
+
+      <div className={styles["projects__container"]}>
+        {top3projects.map((project) => (
+        <div className={styles.project} key={project.id}>
+
+          <picture className={styles.preview}>
+            <source srcSet={`/src/assets/images/projects/${project.imageSrc}.webp`} type="image/webp" />
+            <img src={`/src/assets/images/projects/${project.imageSrc}.jpg`} alt={project.name} height="200" />
+          </picture>
+
           <div>
             <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
+            <p>{project.description}</p>
             <span className={styles.stack}>
               {project.stack.join(" | ")}
             </span>
-            <p>{project.description}</p>
             <a href={project.caseLink}>View case study</a>
           </div>
-        </div> 
-      ))}
 
-    </div>
+          </div> 
+        ))}
+      </div>
+    
+    </section>
    );
 }
  
 export default Projects;
-
-*/

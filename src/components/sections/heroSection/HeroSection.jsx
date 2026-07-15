@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   return ( 
     <>
-      <section aria-labelledby="heading-intro"> 
+      <section id="hero-section" aria-labelledby="heading-intro" className="section"> 
         <div className={styles.intro}>
 
           <div className={styles["intro-text"]}>

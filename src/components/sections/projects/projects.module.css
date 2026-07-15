@@ -1,15 +1,40 @@
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
 
-  & > *:first-child,
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline: 10px;
+
+  /* & > *:first-child,
   & > *:last-child {
     grid-column: 1 / -1;
     padding-block: 2rem;
     display: flex;
-  }
+  } */
 }
 
-.project {
+/* .project {
   padding-inline: 2rem;
+} */
+
+.preview {
+  display: block;
+  width: fit-content;
+  /* margin-inline: auto; */
+  height: 200px;
+  max-width: 100%;
+
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  & > img {
+    border-radius: 10px;
+    max-width: fit-content;
+    height: 100%;
+  }
 }
