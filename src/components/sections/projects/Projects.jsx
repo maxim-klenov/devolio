@@ -1,5 +1,7 @@
 import clsx from "clsx";
 import styles from "./projects.module.css";
+import Icon from "@/components/icon/Icon";
+import Button from "@/components/button/Button";
 
 /**
 
@@ -37,6 +39,14 @@ const Projects = ({ projects }) => {
 
           <div>
             <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
+
+            <span className={styles["icons-group"]}>
+              {project.preview !== undefined &&
+                <a href={project.preview}><Icon className={styles.icon} name="external-link" width={20} height={20}/></a>
+              }
+              <a href={project.github}><Icon className={styles.icon} name="github" width={20} height={20}/></a>
+            </span>
+
             <p>{project.description}</p>
             <span className={styles.stack}>
               {project.stack.join(" | ")}
@@ -48,6 +58,7 @@ const Projects = ({ projects }) => {
         ))}
       </div>
     
+    <Button iconName="arrow-side">Смотреть все проекты??</Button>
     </section>
    );
 }
