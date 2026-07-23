@@ -4,8 +4,8 @@
     id: 1, 
     imageSrc:"password-generator", 
     name: "Генератор паролей", 
-    stack: ["Браузерное расширение", "JavaScript", "JSON", "CSS"], 
-    description: "Создай надежный пароль в одно движение прям на сайте ",
+    stack: ["JavaScript", "JSON", "CSS"], 
+    description: "Создай надежный пароль в одно движение прям на сайте (расширение в браузере)",
     caseLink: "#",
     github: "https://github.com/maxim-klenov/password-generator"
     // https://github.com/maxim-klenov/password-generator

@@ -32,33 +32,40 @@ const Projects = ({ projects }) => {
         {top3projects.map((project) => (
         <div className={styles.project} key={project.id}>
 
-          <picture className={styles.preview}>
+          <picture className={styles["project__preview"]}>
             <source srcSet={`/src/assets/images/projects/${project.imageSrc}.webp`} type="image/webp" />
             <img src={`/src/assets/images/projects/${project.imageSrc}.jpg`} alt={project.name} height="200" />
           </picture>
 
-          <div>
-            <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
-
-            <span className={styles["icons-group"]}>
-              {project.preview !== undefined &&
-                <a href={project.preview}><Icon className={styles.icon} name="external-link" width={20} height={20}/></a>
-              }
-              <a href={project.github}><Icon className={styles.icon} name="github" width={20} height={20}/></a>
+          <div className={styles["project__inner"]}>
+            <span className={styles["project__inner-heading"]}>
+              <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
+              <span className={styles["icons-group"]}>
+                {project.preview !== undefined &&
+                  <a href={project.preview}><Icon className={styles.icon} name="external-link" width={20} height={20}/></a>
+                }
+                <a href={project.github}><Icon className={styles.icon} name="github" width={20} height={20}/></a>
+              </span>
             </span>
 
-            <p>{project.description}</p>
-            <span className={styles.stack}>
-              {project.stack.join(" | ")}
-            </span>
-            <a href={project.caseLink}>View case study</a>
+            <p className={styles["project__inner-description"]}>{project.description}</p>
+
+            <div className={styles["project__inner-stack"]}>
+              {project.stack.map((item) => (
+                <span key={item} className={styles["stack-chip"]}>
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            {/* <a href={project.caseLink}>View case study</a> idk if needed*/}
           </div>
 
           </div> 
         ))}
       </div>
     
-    <Button iconName="arrow-side">Смотреть все проекты??</Button>
+    <Button className={styles['button-watch-more']} iconName="arrow-side">Смотреть все</Button>
     </section>
    );
 }
