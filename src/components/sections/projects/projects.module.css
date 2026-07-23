@@ -1,15 +1,100 @@
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
 
-  & > *:first-child,
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding-inline: 10px;
+
+  /* & > *:first-child,
   & > *:last-child {
     grid-column: 1 / -1;
     padding-block: 2rem;
     display: flex;
-  }
+  } */
 }
 
 .project {
-  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: min-content;
+}
+
+.project__preview {
+  display: block;
+  /* width: fit-content; */
+  /* margin-inline: auto; */
+  /* height: 200px; */
+  max-width: 100%;
+
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+
+  & > img {
+    border-radius: 10px;
+    /* max-width: fit-content; */
+    height: 100%;
+  }
+}
+
+.project__inner {
+  padding-block: 10px;
+}
+
+.project__inner-heading {
+  letter-spacing: 0.5px;
+  /* add styles when font is added */
+  display: flex;
+  justify-content: space-between;
+
+  & > .heading {
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & > .icons-group {
+    display: flex;
+    column-gap: 5px;
+    /* add styles to icons hover */
+  }
+}
+
+.project__inner-description {
+  margin-block: 10px;
+  color: hsl(0, 0%, 50%);
+  font-size: 13px;
+  line-height: 1.2;
+  /* add styles when font is added, remove margin if needed */
+  /* margin-bottom: 0; */
+}
+
+.project__inner-stack {
+  margin-block: 10px;
+  display: flex;
+  column-gap: 5px;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.stack-chip {
+  background-color: #edf2f4;
+  padding-block: 4px;
+  padding-inline: 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.button-watch-more {
+  width: fit-content;
+  margin-inline-start: auto;
 }

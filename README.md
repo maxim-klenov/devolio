@@ -34,6 +34,7 @@
 - `npm run lint` - проверка на ошибки в коде 
 - `npm run build` - сборка проекта для продакшена
 - `npm run preview` - предпросмотр собранного проекта
+- `ncu -u` - upgrade package.json 
 
 ## 📄 Лицензия
 

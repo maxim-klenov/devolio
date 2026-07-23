@@ -10,13 +10,13 @@ const HeroSection = () => {
 
   return ( 
     <>
-      <section aria-labelledby="heading-intro"> 
+      <section id="hero-section" aria-labelledby="heading-intro" className="section"> 
         <div className={styles.intro}>
 
           <div className={styles["intro-text"]}>
             <hgroup>
               <sup className={styles.suptext}>Привет, привет!</sup>
-              <h1 className={styles.heading} id="heading-intro">Это - кратенькое <span>портфолио</span> <br/> Jamstack-разработчика</h1>
+              <h1 className={styles.heading} id="heading-intro">Это - кратенькое портфолио<br/> <span>обо мне</span> </h1>
             </hgroup>
 
             <div className={styles["buttons-group"]}>

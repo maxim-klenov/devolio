@@ -2,7 +2,7 @@ import Icon from '@/components/icon/Icon'
 import styles from "./button.module.css";
 import clsx from 'clsx';
 
-const Button = ({ iconName, variant = "filled", children, ariaLabel = children, ...props }) => {
+const Button = ({ iconName, variant = "filled", children, ariaLabel = children, className = "", ...props }) => {
 
   const hasIconName = !!iconName;
   const hasInnerText = !!children;
@@ -11,6 +11,7 @@ const Button = ({ iconName, variant = "filled", children, ariaLabel = children, 
   const resolvedVariant = variant === "filled" ? "filled" : "inline";
 
   const classes = clsx(
+    className,
     styles.button, 
     hasIconName && hasInnerText && styles['button--flexbox'],
     resolvedVariant === "filled" && styles["btn--filled"],

@@ -1,6 +1,9 @@
 import ArrowDownIcon from "./icons/ArrowDownIcon";
 import ArrowSideIcon from './icons/ArrowSideIcon';
 import ProjectIcon from './icons/ProjectIcon';
+import ExternalLinkIcon from './icons/ExternalLinkIcon'
+import GithubIcon from './icons/GithubIcon'
+
 
 /** 
  interface IconProps {
@@ -31,7 +34,9 @@ type IconComponentMap = {
 const icons = {
   'arrow-down': ArrowDownIcon,
   'arrow-side': ArrowSideIcon,
-  'project': ProjectIcon
+  'project': ProjectIcon,
+  'external-link': ExternalLinkIcon,
+  'github': GithubIcon
 }
 
 const Icon = ({ name, color = "black", width = 50, height = 50, ariaLabel, ariaHidden, ...props }) => {
