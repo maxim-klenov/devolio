@@ -21,7 +21,7 @@ interface ProjectsProps {
 
 */
  
-const Projects = ({ projects }) => {
+const Projects = ({ projects = [] }) => {
   const top3projects = projects.slice(0, 3);
 
   return ( 
@@ -42,9 +42,9 @@ const Projects = ({ projects }) => {
               <h3 className={clsx(styles.heading, "heading-3")}>{project.name}</h3>
               <span className={styles["icons-group"]}>
                 {project.preview !== undefined &&
-                  <a href={project.preview}><Icon className={styles.icon} name="external-link" width={20} height={20}/></a>
+                  <a href={project.preview} target="_blank" rel="noopener noreferrer" ><Icon className={styles.icon} name="external-link" width={20} height={20}/></a>
                 }
-                <a href={project.github}><Icon className={styles.icon} name="github" width={20} height={20}/></a>
+                <a href={project.github} target="_blank" rel="noopener noreferrer"><Icon className={styles.icon} name="github" width={20} height={20}/></a>
               </span>
             </span>
 
@@ -66,6 +66,7 @@ const Projects = ({ projects }) => {
       </div>
     
     <Button className={styles['button-watch-more']} iconName="arrow-side">Смотреть все</Button>
+    {/*  onClick={"link" / "popup"} */}
     </section>
    );
 }
