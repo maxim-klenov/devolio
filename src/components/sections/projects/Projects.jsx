@@ -50,13 +50,13 @@ const Projects = ({ projects = [] }) => {
 
             <p className={styles["project__inner-description"]}>{project.description}</p>
 
-            <div className={styles["project__inner-stack"]}>
+            <ul className={styles["project__inner-stack"]}>
               {project.stack.map((item) => (
-                <span key={item} className={styles["stack-chip"]}>
+                <li key={item} className={styles["stack-chip"]}>
                   {item}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
 
             {/* <a href={project.caseLink}>View case study</a> idk if needed*/}
           </div>

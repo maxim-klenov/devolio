@@ -2,9 +2,9 @@ const ExternalLinkIcon = ({ color, width, height, ariaHidden, ariaLabel, ...prop
   return ( 
     <svg
       stroke={color}
-      stroke-width="2.5" 
-      stroke-linecap="round" 
-      stroke-linejoin="round"
+      strokeWidth="2.5" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
       width={width}
       height={height}
       aria-hidden={ariaHidden}

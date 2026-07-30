@@ -3,6 +3,7 @@ import ArrowSideIcon from './icons/ArrowSideIcon';
 import ProjectIcon from './icons/ProjectIcon';
 import ExternalLinkIcon from './icons/ExternalLinkIcon'
 import GithubIcon from './icons/GithubIcon'
+import ArrowDownExpIcon from './icons/ArrowDownExpIcon'
 
 
 /** 
@@ -32,11 +33,12 @@ type IconComponentMap = {
 
 // :IconComponentMap
 const icons = {
-  'arrow-down': ArrowDownIcon,
+  'arrow-down-hero': ArrowDownIcon,
   'arrow-side': ArrowSideIcon,
   'project': ProjectIcon,
   'external-link': ExternalLinkIcon,
-  'github': GithubIcon
+  'github': GithubIcon,
+  'arrow-down-exp': ArrowDownExpIcon
 }
 
 const Icon = ({ name, color = "black", width = 50, height = 50, ariaLabel, ariaHidden, ...props }) => {

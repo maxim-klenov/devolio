@@ -31,7 +31,7 @@ const HeroSection = () => {
             
         </div>
         
-        <Icon className={styles["arrow-down"]} name="arrow-down" width={100} height={100}/>
+        <Icon className={styles["arrow-down"]} name="arrow-down-hero" width={100} height={100}/>
       </section>
     {/* <ScrollContainer /> */}
     </>
