@@ -18,9 +18,9 @@ const Experience = () => {
 
           <img src={cardImage} alt="preax лого" width="46" height="46" />
 
-          <sup>PREAX</sup>
-          <span>Стажер frontend (React)</span>
-          <sub>Март 2025 - 1 год и 2 месяца</sub>
+          <sup className={clsx(styles["text-styles"], styles.sup)}>PREAX</sup>
+          <span className={clsx(styles["text-styles"], styles.span)}>Стажер frontend (React)</span>
+          <sub className={clsx(styles["text-styles"], styles.sub)}>Март 2025 - 1 год и 2 месяца</sub>
 
           <ul className={styles["inner-stack"]}>
             <li className={styles["stack-chip"]}>CSS</li>
@@ -34,9 +34,10 @@ const Experience = () => {
       </div>
 
 
-        <Icon className={styles["arrow-down"]} name="arrow-down-exp" width={100} height={100}/>
+        <Icon className={styles["arrow-down"]} name="arrow-down-exp" width={150} height={150}/>
 
        <div className={styles.group}>
+          <p className={styles.para}>После я переключился на идивидуальный проект в 10 классе. Кроме выполненного исследования об искусственном интеллекте, я написал скипт, который получал ответы опроса и отправлял их в базу данных.</p>
       </div>
 
        <div className={styles.group}>

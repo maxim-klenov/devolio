@@ -30,25 +30,29 @@
     align-self: start;
   }
 
-  & sup {
+  & .sup {
     grid-column: 2;
     grid-row: 1;
     align-self: start; /* vertically align with image row */
   }
 
-  & span {
+  & .span {
     grid-column: 2;
     grid-row: 1;
     align-self: end; /* same row */
+
+    color: #000;
+    text-wrap: nowrap;
   }
 
-  & sub {
+  & .sub {
     grid-column: 1 / -1; /* under sup+span block */
     grid-row: 2;
     align-self: start;
   }
 
   & .inner-stack {
+    margin-top: 72px;
     grid-column: 1 / -1; /* full width, at the bottom */
     grid-row: 3;
     /* margin: 0;
@@ -57,6 +61,26 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 8px; /*adjust*/
+    row-gap: 11px;
+
+    & > li {
+      background-color: #edf2f4;
+      padding-block: 4px;
+      padding-inline: 6px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
   }
+}
+
+.text-styles {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(0, 0%, 50%);
+}
+
+.arrow-down {
+  display: block;
+  margin-inline: auto;
 }
 /* TODO: optimize images, validate css html, delete unuseful images, svgs */
