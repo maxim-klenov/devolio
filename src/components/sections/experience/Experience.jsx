@@ -37,10 +37,15 @@ const Experience = () => {
         <Icon className={styles["arrow-down"]} name="arrow-down-exp" width={150} height={150}/>
 
        <div className={styles.group}>
+          <div className={styles["buttons-group"]}>
+            <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Github проекта</a>
+            <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Исследование</a>
+          </div>
           <p className={styles.para}>После я переключился на идивидуальный проект в 10 классе. Кроме выполненного исследования об искусственном интеллекте, я написал скипт, который получал ответы опроса и отправлял их в базу данных.</p>
       </div>
 
        <div className={styles.group}>
+        <p className={clsx(styles.para, styles.center)}>В 11 классе, параллельно с подготовкой к ЕГЭ, я проходил олимпиады, хакатоны и курсы по информатике, физике, математике и английскому языку. <a href="https://example.org" target="_blank" rel="noopener noreferrer">См. награды -&gt;</a></p>
       </div>
     </section>
    );
