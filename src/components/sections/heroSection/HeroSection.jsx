@@ -21,7 +21,7 @@ const HeroSection = () => {
 
             <div className={styles["buttons-group"]}>
               <Button iconName="arrow-side" >Связаться</Button>
-              <Button iconName="project" variant="inline">Перейти к проектам</Button>
+              <Button iconName="block" variant="inline">Перейти к проектам</Button>
             </div>
           </div>
 

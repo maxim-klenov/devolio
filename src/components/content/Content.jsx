@@ -3,6 +3,7 @@ import styles from "./content.module.css";
 import Projects from "@/components/sections/projects/Projects";
 import { projects } from "@/assets/data/projects";
 import Experience from "../sections/experience/Experience";
+import Results from "../sections/results/Results";
 
 
 const Content = () => {
@@ -12,6 +13,7 @@ const Content = () => {
       <HeroSection />
       <Projects projects={projects} />
       <Experience />
+      <Results />
     </main>
   );
 }

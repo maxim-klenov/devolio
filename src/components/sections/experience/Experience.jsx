@@ -38,8 +38,16 @@ const Experience = () => {
 
        <div className={styles.group}>
           <div className={styles["buttons-group"]}>
-            <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Github проекта</a>
-            <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Исследование</a>
+
+            <div className={styles["button-group"]}>
+              <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Github проекта</a>
+              <Icon className={styles["icon-background"]}  name="github" width={250} height={250} />
+            </div>
+            
+            <div className={styles["button-group"]}>
+              <a className={styles.btn} href="https://example.org" target="_blank" rel="noopener noreferrer">Исследование</a>
+              <Icon className={styles["icon-background"]}  name="stack" width={250} height={250} />
+            </div>
           </div>
           <p className={styles.para}>После я переключился на идивидуальный проект в 10 классе. Кроме выполненного исследования об искусственном интеллекте, я написал скипт, который получал ответы опроса и отправлял их в базу данных.</p>
       </div>

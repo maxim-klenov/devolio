@@ -103,11 +103,8 @@
 }
 
 .btn {
-  background-color: red;
   width: 343px;
   height: 135px;
-  border-radius: 16px;
-
   font-size: 32px;
   font-weight: 600;
   display: grid;
@@ -117,5 +114,25 @@
 .center {
   margin-top: 90px;
   text-align: center;
+}
+
+.button-group {
+  position: relative;
+  /* background-color: hsl(0, 0%, 50%); */
+  background-color: #ebf0f4;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.icon-background {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  z-index: 0;
+
+  pointer-events: none;
+  user-select: none;
+
+  opacity: 0.3;
 }
 /* TODO: optimize images, validate css html, delete unuseful images, svgs , rem em*/
